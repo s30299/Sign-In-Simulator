@@ -22,7 +22,7 @@ public class PlayeerCardManager : MonoBehaviour
     if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
         descriptionInputField.ActivateInputField();
         descriptionInputField.caretPosition = descriptionInputField.text.Length;
-        // return;
+        return;
     }
     descriptionText.text = newDescription;
 }
